@@ -18,14 +18,14 @@ function draw() {
   y = sin(angle) * radius / 2;
   sine.push(createVector(frameCount % (width - radius * 2), y));
   cosine.push(createVector(x, frameCount % (height - radius * 2)));
-  animateUnityFraming();
+  animateUnitFraming();
   animateCircle();
   animateSine(x, y);
   animateCosine(x, y);
   angle -= increment;
 }
 
-function animateUnityFraming() {
+function animateUnitFraming() {
   stroke(255, 0, 0)
   noFill();
   line(0, radius, width, radius);
